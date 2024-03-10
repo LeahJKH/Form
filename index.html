@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./formstyles.css" />
+  </head>
+  <body>
+
+<header class="row">
+  <div>Logo</div>
+  <div>Nettnavn</div>
+  <div>
+    <a href="../index.html">HOME</a>
+  </div>
+</header>
+
+    <form action="">
+      <div class="column">
+        <!--personal-->
+        <div class="row">
+          <label for="fName">first name</label>
+          <input type="text" name="" id="fName" placeholder="John" required />
+          <label for="lName">last name</label>
+          <input type="text" name="" id="lName" placeholder="Doe" required />
+        </div>
+
+        <div class="row">
+          <label for="birthDay">input your birthday</label>
+          <input type="date" id="birthDay" name="birthDay" required />
+        </div>
+
+          <div class="row">
+            <label for="gender">select your gender</label>
+            <select name="gender" id="gender" required>
+              <option value="None" hidden></option>
+              <option value="Female">Female</option>
+              <option value="Male">Male</option>
+              <option value="Nonbinary">Nonbinary</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div class="row">
+            <input type="file" name="selfie" id="selfie" accept="image/*" />
+          </div>
+          <!--personal-->
+
+          <!--skills-->
+        </div>
+        <p>what languages can you do?</p>
+        <div class="row">
+          <label for="JavaScript">JavaScript</label>
+          <input type="checkbox" name="JavaScript" value="JavaScript" id="JavaScript" />
+          <label for="CSS">CSS</label>
+          <input type="checkbox" name="CSS" value="CSS" id="CSS" />
+          <label for="HTML">HTML</label>
+          <input type="checkbox" name="HTML" value="HTML" id="HTML" />
+          <label for="Python">Python</label>
+          <input type="checkbox" name="Python" id="Python" value="Python" />
+        </div>
+
+        <div class="row">
+          <label for="github">add your github profile:</label>
+          <input type="url" id="github" name="github" placeholder="www.github.com" />
+        </div>
+        <p>where is your skills in programming</p>
+        <div class="row">
+          <label for="timeSpent">beginner</label>
+          <input type="radio" name="timeSpent" />
+          <label for="timeSpent">intermediate</label>
+          <input type="radio" name="timeSpent" />
+          <label for="timeSpent">advanced</label>
+          <input type="radio" name="timeSpent" />
+          <label for="timeSpent">master</label>
+          <input type="radio" name="timeSpent" />
+        </div>
+        <!--skills-->
+
+        <!--contact-info-->
+        <div class="row margin">
+          <input type="email" placeholder="Enter email" required />
+          <input type="password" placeholder="Enter password" required />
+          <input type="tel" placeholder="Enter your phone number" />
+        </div>
+        <!--contact-info-->
+        <div class="row margin">
+          <input type="submit" value="submit" />
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
